@@ -1,0 +1,8 @@
+.divPokemonClass{
+    display: inline-block;
+    text-align: center;
+}
+
+.imgPokemon{
+    display: block;
+}

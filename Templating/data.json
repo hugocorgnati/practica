@@ -1,0 +1,33 @@
+{
+    "soccer": {
+        "name": "Soccer",
+        "subscribers": 12384,
+        "description": "The football subreddit. News, results and discussions",
+        "posts": [
+            {
+                "title": "Nottingham Forest 2-1 Huddersfield: Hosts set up FA Cup quarter-final tie with Liverpool after defeating Terriers",
+                "author": "Nick728"
+            },
+            {
+                "title": "Manchester United's Marcus Rashford on Paris Saint-Germain's wanted list - Paper talk",
+                "author": "Gaz80",
+                "img": "https://assets-es.imgfoot.com/media/cache/642x382/image-sans-17.jpg"
+            }
+        ]
+    },
+    "basquet": {
+        "name": "basquet",
+        "subscribers": 12312,
+        "description": "The world of basquet news",
+        "posts": [
+            {
+                "title": "Notice 1",
+                "author": "ferraz92"
+            },
+            {
+                "title": "Notice 2",
+                "author": "asd123"
+            }
+        ]
+    }
+}
