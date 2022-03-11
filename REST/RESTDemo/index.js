@@ -12,7 +12,7 @@ app.use(methodOverride("_method"))
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
 
-const comments = [
+let comments = [
     {
         id: uuid(),
         username: "Todd",
@@ -70,14 +70,12 @@ app.patch("/comments/:id", (req, res) => {
     res.redirect("/comments")
 })
 
-app.get("/tacos", (req, res) => {
-    res.send("GET /tacos response")
+app.delete("/comments/:id", (req, res) => {
+    const { id } = req.params;
+    comments = comments.filter(c => c.id !== id);
+    res.redirect("/comments");
 })
 
-app.post("/tacos", (req, res) => {
-    const { meat, qty } = req.body
-    res.send(`You chose ${qty} of ${meat} tacos`)
-})
 
 app.listen(3000, () => {
     console.log("Listening on port 3000...")
